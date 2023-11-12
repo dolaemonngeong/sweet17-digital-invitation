@@ -3003,7 +3003,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				height: 80vh;
+				height: 100vh;
 			}
 
 				#header:after {
@@ -3023,7 +3023,8 @@ input, select, textarea {
 					}
 
 				#header .container {
-					display: none;
+					margin-left: -50%;
+					padding: 3em;
 				}
 
 		/* Footer */
