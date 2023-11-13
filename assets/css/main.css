@@ -2837,12 +2837,14 @@ input, select, textarea {
 			}
 
 		#header .container {
+			display: flex;
 			background: rgba(255, 255, 255, 0.95);
 			bottom: 0;
 			left: 50%;
+			/* right: 50%; */
 			margin-left: -17.5em;
-			padding: 2.5em;
 			position: absolute;
+			padding: 2.5em;
 		}
 
 			#header .container > :last-child {
@@ -2953,6 +2955,8 @@ input, select, textarea {
 			}
 
 			#header .container {
+				display: flex;
+				min-width: fit-content;
 				margin-left: -40%;
 				padding: 3em;
 			}
@@ -3023,8 +3027,13 @@ input, select, textarea {
 					}
 
 				#header .container {
-					margin-left: -50%;
+					/* display: flex; */
+					/* margin-left: auto;
+					margin-right: auto; */
+					/* /* margin-left: -40%; */
+					margin-left: -50%;	
 					padding: 3em;
+					min-width: fit-content;
 				}
 
 		/* Footer */
@@ -3044,6 +3053,7 @@ input, select, textarea {
 			html, body {
 				min-width: 320px;
 			}
+			
 
 		/* List */
 
