@@ -1,6 +1,14 @@
 @import url("fontawesome-all.min.css");
-@import url("assets/webfonts/Betterlett.otf");		/*	Import Betterlett	*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+
+/*!* Import Google Font *!*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Ruthie&display=swap');
+
+/* Defining font-family */
+@font-face {
+	font-family: 'Alex Brush', cursive;
+	font-family: 'Ruthie', cursive;
+}
 
 /*
 	Highlights by HTML5 UP
@@ -57,7 +65,7 @@ body {
 }
 
 p.customFont {
-	font-family: Betterlett, sans-serif;
+	font-family: "Alex Brush", sans-serif;
 	font-size: 32pt;
 	text-transform: none;
 }
@@ -128,7 +136,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #6f7577;
-		font-family: "Raleway", "Helvetica", sans-serif;
+		font-family: "Betterlett", "Raleway", "Helvetica", sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		line-height: 1.75em;
