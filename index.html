@@ -452,21 +452,51 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<h2>RSVP</h2>
 			</header>
 			<p class="customFont2">Please RSVP before December 1st, 2023</p>
-			<form method="post" action="#">
-				<div class="row gtr-uniform">
-					<div class="col-12"><input type="text" name="name" id="name" placeholder="Name" />
-					</div>
-					<!-- <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" />
-					</div> -->
-					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-					</div>
-					<div class="col-12">
-						<ul class="actions special">
-							<li><input type="submit" value="Send" class="primary" /></li>
-						</ul>
-					</div>
+
+
+
+			<div class="col-12">
+				<ul class="actions special">
+					<li>
+						<a href="#two" class="button primary scrolly" id="openModalBtn">Open</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close" id="closeModalBtn">&times;</span>
+					<form id="rsvpForm">
+						<label for="name">Your Name:</label>
+						<input type="text" id="name" name="name" required>
+
+						<label for="response">Will you be attending?</label>
+						<select id="response" name="response" required>
+							<option value="yes">Yes, I'd like to come</option>
+							<option value="no">Sorry, I can't</option>
+						</select>
+
+						<button type="submit">Submit RSVP</button>
+					</form>
 				</div>
-			</form>
+			</div>
+
+<!--			<form method="post" action="#">-->
+<!--				<div class="row gtr-uniform">-->
+<!--					<div class="col-12"><input type="text" name="name" id="name" placeholder="Name" />-->
+<!--					</div>-->
+<!--					&lt;!&ndash; <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" />-->
+<!--					</div> &ndash;&gt;-->
+<!--					<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea>-->
+<!--					</div>-->
+<!--					<div class="col-12">-->
+<!--						<ul class="actions special">-->
+<!--							<li><input type="submit" value="Send" class="primary" /></li>-->
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</form>-->
+			
 		</div>
 		<!-- ICON MEDSOS IVITEE -->
 		<footer>
