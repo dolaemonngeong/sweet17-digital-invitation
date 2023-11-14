@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Joana's Sweet Seventeen Party</title>
+	<title>Joana's Sweet Seventeen Dinner</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,7 +20,7 @@
 	<section id="header">
 		<header class="major">
 			<p class="customFont">Joana Sherren Hindarto</p>
-			<p>A fun little { responsive } single pager by <a href="http://html5up.net">HTML5 UP</a></p>
+			<p>Sweet Seventeen Dinner</a></p>
 		</header>
 		<div class="container">
 			<ul class="actions special">
@@ -49,41 +49,6 @@
 			<a href="#two" class="goto-next scrolly">Next</a>
 		</div>
 	</section>
-
-	<!-- Two -->
-	<section id="two" class="main special">
-		<div class="container">
-			<!-- <span class="image fit primary"><img src="images/bg.jpg" alt="" /></span> -->
-			<div class="content">
-				<header class="major">
-					<h2>RSVP</h2>
-				</header>
-				<p>Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-					vulputate.</p>
-				<ul class="icons-grid">
-					<li>
-						<span class="icon solid major fa-map-pin"></span>
-						<i class="fa-solid fa-location-dot"></i>
-						<h3>Magna Etiam</h3>
-					</li>
-					<li>
-						<span class="icon solid major fa-pencil-alt"></span>
-						<h3>Lorem Ipsum</h3>
-					</li>
-					<li>
-						<span class="icon solid major fa-code"></span>
-						<h3>Nulla Tempus</h3>
-					</li>
-					<li>
-						<span class="icon solid major fa-coffee"></span>
-						<h3>Sed Feugiat</h3>
-					</li>
-				</ul> 
-			</div>
-			<a href="#three" class="goto-next scrolly">Next</a>
-		</div>
-	</section>
-
 	<!-- Three -->
 	<section id="three" class="main special">
 		<div class="container">
@@ -116,7 +81,43 @@
 			<a href="#footer" class="goto-next scrolly">Next</a>
 		</div>
 	</section>
-
+	<!-- Two -->
+	<section id="two" class="main special">
+		<div class="container">
+			<!-- <span class="image fit primary"><img src="images/bg.jpg" alt="" /></span> -->
+			<div class="content">
+				<header class="major">
+					<h2>RSVP</h2>
+				</header>
+				<p>Please RSVP before 12th December</p>
+				<ul class="actions special">
+					<li>
+						<a href="#two" class="button primary scrolly" id="openModalBtn">Open</a>
+					</li>
+				</ul>
+			</div>
+			<a href="#three" class="goto-next scrolly">Next</a>
+		</div>
+	</section>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+		  <span class="close" id="closeModalBtn">&times;</span>
+		  <form id="rsvpForm">
+			<label for="name">Your Name:</label>
+			<input type="text" id="name" name="name" required>
+	  
+			<label for="response">Will you be attending?</label>
+			<select id="response" name="response" required>
+			  <option value="yes">Yes, I'd like to come</option>
+			  <option value="no">Sorry, I can't</option>
+			</select>
+	  
+			<button type="submit">Submit RSVP</button>
+		  </form>
+		</div>
+	  </div>
+	
+	  <script src="script.js"></script>
 	<!-- Four -->
 	<!--
 			<section id="four" class="main">
