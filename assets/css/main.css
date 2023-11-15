@@ -1,6 +1,12 @@
 @import url("fontawesome-all.min.css");
-@import url("assets/webfonts/Betterlett.otf");		/*	Import Betterlett	*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/*@import url("assets/webfonts/Betterlett.otf");		!*	Import Betterlett	*!*/
+/*@import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");*/
+
+@font-face {
+	font-family: 'Alex Brush', cursive;
+}
 
 /*
 	Highlights by HTML5 UP
@@ -57,13 +63,14 @@ body {
 }
 
 p.customFont {
-	font-family: Betterlett, sans-serif;
-	font-size: 32pt;
+	font-family: "Alex Brush", cursive;
+	font-size: 40pt;
 	text-transform: none;
 }
 
 p.customFont2 {
 	font-family: serif;
+	font-size: 14pt;
 }
 
 mark {
