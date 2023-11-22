@@ -3,7 +3,6 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 (function($) {
 
 	var	$window = $(window),
@@ -175,6 +174,7 @@
 			var openModalBtn = document.getElementById('openModalBtn');
 			var closeModalBtn = document.getElementById('closeModalBtn');
 			var modal = document.getElementById('myModal');
+			var rsvpForm = document.getElementById('rsvpForm');
 		  
 			openModalBtn.addEventListener('click', function () {
 			  modal.style.display = 'block';
@@ -189,7 +189,53 @@
 				modal.style.display = 'none';
 			  }
 			});
+		  
+			rsvpForm.addEventListener('submit', function (event) {
+			  event.preventDefault();
+		  
+			  var Nama = document.getElementById('Nama').value;
+			  var Kedatangan = document.getElementById('Kedatangan').value;
+		  
+			  // Make an AJAX request to the PHP script
+			  var xhr = new XMLHttpRequest();
+			  xhr.open('POST', 'assets/php/rsvp.php', true);
+			  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		  
+			  xhr.onload = function () {
+				if (xhr.status === 200) {
+				  console.log(xhr.responseText);
+				  // Optionally, display a success message to the user
+				} else {
+				  console.error('Error:', xhr.status, xhr.statusText);
+				  // Optionally, display an error message to the user
+				}
+		  
+				// Close the modal after submitting the form
+				modal.style.display = 'none';
+			  };
+		  
+			  // Send the form data to the server
+			  xhr.send('Nama=' + encodeURIComponent(Nama) + '&Kedatangan=' + encodeURIComponent(Kedatangan));
+			});
 		  });
 		  
-
+		  document.getElementById('wishesForm').addEventListener('submit', function (event) {
+			event.preventDefault(); // Menghentikan aksi default formulir (pindah halaman)
+	  
+			var name = document.getElementById('name').value;
+			var message = document.getElementById('message').value;
+	  
+			var xhr = new XMLHttpRequest();
+			xhr.open('POST', 'assets/php/wish.php', true);
+			xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	  
+			xhr.onreadystatechange = function () {
+			   if (xhr.readyState == 4 && xhr.status == 200) {
+				  // Tambahkan logika atau respons yang sesuai di sini
+				  console.log(xhr.responseText);
+			   }
+			};
+	  
+			xhr.send('name=' + encodeURIComponent(name) + '&message=' + encodeURIComponent(message));
+		 });
 })(jQuery);
