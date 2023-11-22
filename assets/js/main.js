@@ -198,7 +198,7 @@
 		  
 			  // Make an AJAX request to the PHP script
 			  var xhr = new XMLHttpRequest();
-			  xhr.open('POST', 'assets/php/rsvp.php', true);
+			  xhr.open('POST', 'assets/php/main.php', true);
 			  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 		  
 			  xhr.onload = function () {
