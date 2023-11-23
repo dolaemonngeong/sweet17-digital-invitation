@@ -4,6 +4,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+const audio = new Audio();
+audio.src = "audio/bgmusic.m4a";
+audio.loop = true;
+
+function toggleAudio() {
+	if (audio.paused) {
+		audio.play();
+	} else {
+		audio.pause();
+	}
+}
+
 (function($) {
 
 	var	$window = $(window),
