@@ -2895,12 +2895,12 @@ input, select, textarea {
 				color: #ffffff;
 			}
 
-			#footer footer a {
-				color: inherit;
+			#footer footer a, #footer footer li {
+				color: #000000;
 			}
 
 				#footer footer a:hover {
-					color: #ffffff !important;
+					color: #EC8F5E !important;
 				}
 
 			#footer footer .copyright {
